@@ -2,9 +2,9 @@
 
 	$db         = mysqli_connect('localhost', 'root', '', 'search');
 	
-	$company    = $_GET['company'];
+	$cars    = $_GET['cars'];
 	
-	$sql        = "SELECT name FROM table1 WHERE name like '$company%' ORDER BY name";
+	$sql        = "SELECT name FROM carname WHERE name like '$cars%' ORDER BY name";
 	
 	$res        = $db->query($sql);
 	
